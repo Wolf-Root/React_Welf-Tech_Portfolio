@@ -34,7 +34,7 @@ export const Contact = () => {
         >
             <RevealOnScroll>
                 <div className="px-4 w-150">
-                    <h2 className="text-3xl text-center font-bold mb-8 bg-gradient-to-r from-[#38EF7D] to-[#11998E] bg-clip-text text-transparent">
+                    <h2 className="text-5xl text-center font-bold mb-8 bg-gradient-to-r from-[#38EF7D] to-[#11998E] bg-clip-text text-transparent">
                         Get In Touch
                     </h2>
                     <form className="space-y-6" onSubmit={handleSubmit}>

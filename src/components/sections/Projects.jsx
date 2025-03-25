@@ -8,7 +8,7 @@ export const Projects = () => {
         >
             <RevealOnScroll>
                 <div className="max-w-5xl mx-auto px-4 capitalize">
-                    <h2 className="text-3xl text-center font-bold mb-8 bg-gradient-to-r from-[#38EF7D] to-[#11998E] bg-clip-text text-transparent">
+                    <h2 className="text-5xl text-center font-bold mb-8 bg-gradient-to-r from-[#38EF7D] to-[#11998E] bg-clip-text text-transparent">
                         featured Projects
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -37,7 +37,8 @@ export const Projects = () => {
                                     href=""
                                     className="text-green-400 transition-all hover:text-green-600 my-4"
                                 >
-                                    View Project →
+                                    View Project
+                                    <i class="pl-4 fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
@@ -63,7 +64,8 @@ export const Projects = () => {
                                     href=""
                                     className="text-green-400 transition-all hover:text-green-600 my-4"
                                 >
-                                    View Project →
+                                    View Project
+                                    <i class="pl-4 fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
@@ -90,7 +92,8 @@ export const Projects = () => {
                                     href=""
                                     className="text-green-400 transition-all hover:text-green-600 my-4"
                                 >
-                                    View Project →
+                                    View Project
+                                    <i class="pl-4 fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
