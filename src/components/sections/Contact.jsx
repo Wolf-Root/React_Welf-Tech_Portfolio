@@ -18,7 +18,7 @@ export const Contact = () => {
 
         emailjs
             .sendForm(serviceID, templateID, e.target, userID)
-            .then((result) => {
+            .then(() => {
                 alert("Message Send !");
                 setformData({name: "", email: "", message:""})
             })
@@ -33,7 +33,7 @@ export const Contact = () => {
             className="min-h-screen flex items-center justify-center py-20"
         >
             <RevealOnScroll>
-                <div className="px-4 w-150">
+                <div className="px-4 w-full md:w-xl">
                     <h2 className="text-5xl text-center font-bold mb-8 bg-gradient-to-r from-[#38EF7D] to-[#11998E] bg-clip-text text-transparent">
                         Get In Touch
                     </h2>
