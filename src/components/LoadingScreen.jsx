@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const LoadingScreen = ({ onComplete }) => {
     const [text, setText] = useState("");
@@ -13,15 +12,19 @@ export const LoadingScreen = ({ onComplete }) => {
 
             if (index > fullText.length) {
                 clearInterval(interval);
-                
+
                 setTimeout(() => {
-                    onComplete()
+                    onComplete();
                 }, 1500);
             }
-
         }, 100);
 
-        return () => clearInterval(interval);
+        document.body.classList.add("overflow-hidden");
+
+        return () => {
+            clearInterval(interval);
+            document.body.classList.remove("overflow-hidden");
+        };
     }, [onComplete]);
 
     return (
