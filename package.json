@@ -1,8 +1,8 @@
 {
   "name": "react_welf-tech_portfolio",
   "homepage": "https://wolfhx9.github.io/React_Welf-Tech_Portfolio/",
-  "private": true,
-  "version": "1",
+  "private": false,
+  "version": "1.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
