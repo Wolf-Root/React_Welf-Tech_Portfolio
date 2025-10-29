@@ -2,62 +2,62 @@
 
 html,
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Space Grotesk", sans-serif;
-    background: #0a0a0a;
-    color: #f3f4f6;
-    scroll-behavior: smooth;
-    scrollbar-width: thin;
-    scrollbar-color: oklch(0.627 0.194 149.214) black;
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+  background: #0a0a0a;
+  color: #f3f4f6;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: oklch(0.627 0.194 149.214) black;
 }
 
 ::-webkit-scrollbar {
-    scroll-behavior: smooth;
-    scrollbar-width: thin;
-    scrollbar-color: oklch(0.627 0.194 149.214) black;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: oklch(0.627 0.194 149.214) black;
 }
 
 @layer utilities {
-    @keyframes blink {
+  @keyframes blink {
 
-        0%,
-        100% {
-            opacity: 1;
-        }
-
-        50% {
-            opacity: 0;
-        }
+    0%,
+    100% {
+      opacity: 1;
     }
 
-    .animate-blink {
-        animation: blink 1s infinite step-end;
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .animate-blink {
+    animation: blink 1s infinite step-end;
+  }
+
+  @keyframes loading {
+    0% {
+      transform: translateX(-100%);
     }
 
-    @keyframes loading {
-        0% {
-            transform: translateX(-100%);
-        }
-
-        100% {
-            transform: translateX(250%);
-        }
+    100% {
+      transform: translateX(250%);
     }
+  }
 
-    .animate-loading-bar {
-        animation: loading 1s infinite ease;
-    }
+  .animate-loading-bar {
+    animation: loading 1s infinite ease;
+  }
 }
 
 .Reveal {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease, transform 1s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 .Reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 
 }

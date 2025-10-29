@@ -11,38 +11,36 @@ import { Contact } from "./components/sections/Contact";
 import { Footer } from "./components/Footer";
 
 function App() {
-    const [isLoaded, setIsLoaded] = useState(false);
-    const [menuOpen, setMenuOpen] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-    return (
-        <>
-            {!isLoaded && (
-                <LoadingScreen onComplete={() => setIsLoaded(true)} />
-            )}
+  return (
+    <>
+      {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
 
-            {/* header */}
-            <div
-                className={`min-h-screen transition-opacity duration-700 ${
-                    isLoaded ? "opacity-100" : "opacity-0"
-                } bg-black text-gray-100`}
-            >
-                <header>
-                    <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-                    <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-                </header>
+      {/* header */}
+      <div
+        className={`min-h-screen transition-opacity duration-700 ${
+          isLoaded ? "opacity-100" : "opacity-0"
+        } bg-black text-gray-100`}
+      >
+        <header>
+          <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+          <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        </header>
 
-                <Home />
-            </div>
+        <Home />
+      </div>
 
-            <main>
-                <About />
-                <Projects />
-                <Contact />
-            </main>
+      <main>
+        <About />
+        <Projects />
+        <Contact />
+      </main>
 
-            <Footer />
-        </>
-    );
+      <Footer />
+    </>
+  );
 }
 
 export default App;
