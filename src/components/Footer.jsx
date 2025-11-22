@@ -4,7 +4,7 @@ export const Footer = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div className="flex flex-col gap-4 items-center">
           <a href="#Home" className="font-mono font-bold text-3xl text-white">
-            Welf<span className="text-green-500">.Tech</span>
+            Wolf<span className="text-green-500">.Tech</span>
           </a>
           <p className="text-gray-200">
             <strong>© Wolf-Root. </strong> All Rights Reserved.
